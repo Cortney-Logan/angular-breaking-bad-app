@@ -1,0 +1,51 @@
+.character-div {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+
+  width: 7.5em;
+  height: 12em;
+  border-radius: 4px;
+  margin: .5em 1em;
+
+  background-color: #026632;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.character-div:hover {
+  background-color: #024b25;
+  left: .3em;
+  transform: scale(1.1)
+}
+
+.character-div:hover p{
+  font-weight: bold;
+}
+
+.character-div:hover img{
+  transform: scale(1.1) 
+}
+
+.character-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-div img {
+  height: 100px;
+  padding: 10px;
+}
+
+.character-div p {
+  text-align: center;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}

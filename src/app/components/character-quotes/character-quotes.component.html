@@ -1,0 +1,8 @@
+<div>
+  <h2>Quotes</h2>
+  <div *ngIf="quotes">
+    <p *ngFor="let quote of quotes">
+      <i>"{{ quote.quote }}"</i>
+    </p>
+  </div>
+</div>

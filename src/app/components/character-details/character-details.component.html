@@ -1,0 +1,15 @@
+<div *ngIf="character">
+  <h2>{{ character.name }}</h2>
+  <div class="character-detail-container">
+    <img id="character-img" src="{{ character.img }}" />
+    <div id="character-details">
+      <p><b>Nickname: </b>{{ character.nickname }}</p>
+      <p><b>Status: </b>{{ character.status }}</p>
+      <p><b>Birthday: </b>{{ character.birthday | date }}</p>
+      <p><b>Actor: </b>{{ character.portrayed }}</p>
+    </div>
+  </div>
+  <app-character-quotes character = "{{ character.name }}" ></app-character-quotes>
+</div>
+
+
